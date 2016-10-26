@@ -69,7 +69,6 @@ def learn():
 
     # serializing the data
     obj = Model(vocab_list, b)
-    print(b)
     a = json.dumps(vars(obj))
     fs = open("per_model.txt", "w")
     fs.write(a)
